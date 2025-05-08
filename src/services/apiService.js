@@ -64,7 +64,7 @@ const apiService = {
       
       // Descomentar cuando tengas el backend listo
       /*
-      const response = await apiClient.get('user/profile');
+      const response = await apiClient.get('usuario/perfil');
       return response.data;
       */
     } catch (error) {

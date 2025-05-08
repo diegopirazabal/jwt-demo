@@ -16,7 +16,7 @@ register: async (name, email, password) => {
       
       // Descomentar cuando tengas el backend listo
       /*
-      const response = await axios.post(`${API_URL}register`, {
+      const response = await axios.post(`${API_URL}registrar`, {
         username: name,
         email,
         password
@@ -54,7 +54,7 @@ register: async (name, email, password) => {
       
       // Descomentar cuando tengas el backend listo
       /*
-      const response = await axios.post(`${API_URL}login`, {
+      const response = await axios.post(`${API_URL}ingresar`, {
         email,
         password
       });
