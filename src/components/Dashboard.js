@@ -97,9 +97,6 @@ const Dashboard = () => {
             <div><strong>Rol:</strong></div>
             <div>{user.role}</div>
             
-            <div><strong>Permisos:</strong></div>
-            <div>{Array.isArray(user.permissions) ? user.permissions.join(', ') : 'No disponible'}</div>
-            
             {user.exp && (
               <>
                 <div><strong>Expiración:</strong></div>

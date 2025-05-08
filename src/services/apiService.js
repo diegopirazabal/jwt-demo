@@ -56,7 +56,7 @@ const apiService = {
         id: user.id,
         username: user.username,
         email: user.email,
-        nombre: user.nombre === 'admin' ? 'Administrador' : 'Usuario Normal',
+        nombre: user.nombre + ' ' + user.apellido,
         role: user.role,
         lastLogin: new Date().toISOString(),
         status: 'active'

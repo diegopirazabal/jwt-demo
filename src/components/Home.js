@@ -7,9 +7,9 @@ const Home = () => {
   
   return (
     <div style={{ maxWidth: '800px', margin: '0 auto', padding: '1rem', textAlign: 'center' }}>
-      <h1>JWT Auth App</h1>
+      <h1>JWT Demo</h1>
       <p style={{ fontSize: '1.2rem', marginBottom: '2rem' }}>
-        Aplicación de ejemplo para trabajar con autenticación JWT
+        Juan me podes merendar las bolas
       </p>
       
       <div style={{ 
@@ -39,8 +39,16 @@ const Home = () => {
           </>
         ) : (
           <>
-            <h2>Bienvenido a JWT Auth App</h2>
-            <p>Inicia sesión para acceder a todas las funcionalidades.</p>
+            <h2>Bienvenido a JWT demo</h2>
+            <p>Logea para acceder a todas las funcionalidades.</p>
+            <p>Credenciales: </p>
+            <p><strong>Usuario:</strong> user@gmail.com</p>
+            <p><strong>Contraseña:</strong> user</p>
+            <p>O</p>
+            <p><strong>Usuario:</strong> admin@gmail.com</p>
+            <p><strong>Contraseña:</strong> admin</p>
+            <p>O</p>
+            <p><strong>Con los botones</strong></p>
             <Link 
               to="/login"
               style={{
@@ -74,16 +82,6 @@ const Home = () => {
           <li>Integración con axios para futuras peticiones al backend</li>
         </ul>
         
-        <h3>Acerca de JWT</h3>
-        <p>
-          JWT (JSON Web Token) es un estándar abierto para crear tokens de acceso que permiten la propagación
-          de identidad y privilegios entre cliente y servidor. Un JWT consta de tres partes separadas por puntos:
-        </p>
-        <ol>
-          <li><strong>Header:</strong> Contiene el tipo de token y el algoritmo de firma</li>
-          <li><strong>Payload:</strong> Contiene los "claims" o información sobre el usuario y metadatos</li>
-          <li><strong>Signature:</strong> Una firma que verifica la autenticidad del token</li>
-        </ol>
       </div>
     </div>
   );
